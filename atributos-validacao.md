@@ -5,7 +5,7 @@ Este dicionário contém informações sobre os principais atributos de validaç
 ```csharp
 
 ## [Required] 
-Indica que um campo é obrigatório.
+Indica que um campo é obrigatório, Isso significa que o campo não pode ser nulo ou vazio; ele deve ter um valor fornecido.
 
 ## [EmailAddress]
 Valida se o valor de uma propriedade é um endereço de e-mail válido.
@@ -63,6 +63,7 @@ namespace SimpleApiExample.Models
         public int Id { get; set; }
 
         [Required]
+        [StringLength(100)]
         public string Name { get; set; }
 
         [Required]
@@ -92,3 +93,4 @@ namespace SimpleApiExample.Models
     }
 }
 ```
+Se os dados enviados pelo usuário estiverem com formatos incorretos ou se algum campo obrigatório estiver faltando ou vazio, a validação falha.
