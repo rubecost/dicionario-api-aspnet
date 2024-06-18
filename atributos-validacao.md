@@ -50,4 +50,45 @@ Especifica o tipo de dado associado com a propriedade (pode ser usado para forma
 ## [CustomValidation]
 Permite a criação de validações personalizadas.
 [CustomValidation(typeof(MyValidatorClass), "MyValidationMethod")]
+```
 
+Exemplo de uso:
+
+```csharp
+
+namespace SimpleApiExample.Models
+{
+    public class User
+    {
+        public int Id { get; set; }
+
+        [Required]
+        public string Name { get; set; }
+
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+
+        [Range(18, 99)]
+        public int Age { get; set; }
+
+        [StringLength(20, MinimumLength = 5)]
+        public string Username { get; set; }
+
+        [RegularExpression(@"^[a-zA-Z0-9]*$")]
+        public string Password { get; set; }
+
+        [Phone]
+        public string PhoneNumber { get; set; }
+
+        [Url]
+        public string Website { get; set; }
+
+        [DataType(DataType.Date)]
+        public DateTime BirthDate { get; set; }
+
+        [CustomValidation(typeof(UserValidator), "ValidateCustomProperty")]
+        public string CustomProperty { get; set; }
+    }
+}
+```
