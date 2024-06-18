@@ -42,3 +42,8 @@ http://localhost:5000/api/login/login
         }
     }
 ```
+A chamada com a rota personalizada ao método de ação do controller "AuthController" 
+agora ficara assim:
+
+http://localhost:5000/api/autenticar/login/1
+
