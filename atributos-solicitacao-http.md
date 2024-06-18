@@ -1,4 +1,4 @@
-# Dicionário de Atributos de Métodos de Solicitação HTTP em ASP.NET Core
+# Dicionário de Atributos de Métodos de Solicitação HTTP em ASP.NET Core 
 
 Este dicionário contém informações sobre os principais atributos de métodos de solicitação HTTP em ASP.NET Core.
 
