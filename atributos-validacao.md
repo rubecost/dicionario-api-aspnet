@@ -2,7 +2,7 @@
 
 Este dicionário contém informações sobre os principais atributos de validação disponíveis em C#.
 
-## [Required]
+## [Required] 
 
 Indica que um campo é obrigatório.
 
