@@ -2,6 +2,8 @@
 
 Este dicionário contém informações sobre os principais atributos de validação disponíveis em C#.
 
+```csharp
+
 ## [Required] 
 
 Indica que um campo é obrigatório.
@@ -14,7 +16,6 @@ Valida se o valor de uma propriedade é um endereço de e-mail válido.
 
 Compara o valor da propriedade com o valor de outra propriedade.
 
-```csharp
 [Compare("OtherProperty")]
 
 ## [Range]
