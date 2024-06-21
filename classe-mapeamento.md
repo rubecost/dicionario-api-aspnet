@@ -1,7 +1,6 @@
 # Classes de Mapeamento para Campos do Model
 
-Essa classe de mapemento interage diretamente com os valores recebidos nas requisições a API, 
-ela é responsavel por repassar os valores aos campos das classe do Model.
+Essa classe de mapeamento interage diretamente com os valores recebidos nas requisições a API, ela é responsavel por repassar os valores aos campos das classe do Model.
 
 ``` CSharp
 using YourNamespace.Models;
