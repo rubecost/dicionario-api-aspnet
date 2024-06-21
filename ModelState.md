@@ -23,3 +23,21 @@ A ModelState é uma propriedade da classe ControllerBase, que representa o estad
     }
 
 ```
+Para que o ModelState.IsValid funcione corretamente, o EmployeeDto deve usar anotações de dados para definir regras de validação:
+Como [Required], [StringLength(100)] etc...
+
+``` CSharp
+public class EmployeeDto
+{
+    [Required]
+    public int EmployeeID { get; set; }
+
+    [Required]
+    [StringLength(100)]
+    public string Name { get; set; }
+
+    [Required]
+    [StringLength(50)]
+    public string Position { get; set; }
+}
+```
